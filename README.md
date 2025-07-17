@@ -13,7 +13,7 @@ rundelor și măsurarea timpului de execuție. Proiectul a fost validat prin sim
 hardware, fiind un exemplu educațional și aplicabil în domenii precum securitatea datelor și sistemele embedded.
 
 Soluția propusă:
-![Soluție 1](encryption_solution.png)
+![Soluție 1](encryption solution.png)
 
 AES-128 Interface 
  • Implementarea AES-128 pe FPGA
