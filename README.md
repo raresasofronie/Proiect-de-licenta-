@@ -12,3 +12,13 @@ cripteze sau decripteze conform standardului AES-128 și să vizualizeze în tim
 rundelor și măsurarea timpului de execuție. Proiectul a fost validat prin simulări în Vivado și teste practice pe placă, demonstrând o funcționalitate completă și o securitate îmbunătățită prin implementarea 
 hardware, fiind un exemplu educațional și aplicabil în domenii precum securitatea datelor și sistemele embedded.
 
+Soluția propusă:
+![Soluție 1](encryption_solution.png)
+
+AES-128 Interface 
+ • Implementarea AES-128 pe FPGA
+ • Comunicația UART bidirecțională
+ • Interfață Python + Tkinter
+ • Vizualizare completă a întregului proces
+ • Timp de execuție
+ • Mod Dark/Light la alegerea utilizatorului
