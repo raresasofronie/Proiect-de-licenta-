@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sun Jul  6 13:20:00 2025
+# Process ID: 5160
+# Current directory: D:/Licenta/Licenta/PROIECT LICENTA  FINAL/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4920 D:\Licenta\Licenta\PROIECT LICENTA  FINAL\project_1\project_1.xpr
+# Log file: D:/Licenta/Licenta/PROIECT LICENTA  FINAL/project_1/vivado.log
+# Journal file: D:/Licenta/Licenta/PROIECT LICENTA  FINAL/project_1\vivado.jou
+# Running On        :DESKTOP-VR7V5RM
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :12th Gen Intel(R) Core(TM) i5-12500H
+# CPU Frequency     :3110 MHz
+# CPU Physical cores:12
+# CPU Logical cores :16
+# Host memory       :16832 MB
+# Swap memory       :12348 MB
+# Total Virtual     :29180 MB
+# Available Virtual :14581 MB
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Licenta/Licenta/PROIECT LICENTA  FINAL/project_1/project_1.xpr}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/Licenta/Licenta/PROIECT LICENTA  FINAL/project_1/project_1.runs/impl_1/AES_TOP.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {D:/Licenta/Licenta/PROIECT LICENTA  FINAL/project_1/project_1.runs/impl_1/AES_TOP.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {D:/Licenta/Licenta/PROIECT LICENTA  FINAL/project_1/project_1.runs/impl_1/AES_TOP.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+close_hw_manager

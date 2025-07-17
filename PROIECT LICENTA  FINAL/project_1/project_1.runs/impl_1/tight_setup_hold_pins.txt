@@ -1,0 +1,56 @@
++====================+===================+===================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                               |
++====================+===================+===================================+
+| clk                | clk               | r10_addroundkey_reg_reg[48]/D     |
+| clk                | clk               | r10_invaddroundkey_reg_reg[62]/D  |
+| clk                | clk               | r10_invaddroundkey_reg_reg[70]/D  |
+| clk                | clk               | r10_invaddroundkey_reg_reg[63]/D  |
+| clk                | clk               | r10_invaddroundkey_reg_reg[67]/D  |
+| clk                | clk               | r10_invaddroundkey_reg_reg[58]/D  |
+| clk                | clk               | r10_invaddroundkey_reg_reg[60]/D  |
+| clk                | clk               | r6_invaddroundkey_reg_reg[106]/D  |
+| clk                | clk               | key_expansion_unit/w_reg[3][15]/D |
+| clk                | clk               | key_expansion_unit/w_reg[1][15]/D |
+| clk                | clk               | key_expansion_unit/w_reg[2][27]/D |
+| clk                | clk               | key_expansion_unit/w_reg[1][28]/D |
+| clk                | clk               | key_expansion_unit/w_reg[1][27]/D |
+| clk                | clk               | key_expansion_unit/w_reg[2][13]/D |
+| clk                | clk               | key_expansion_unit/w_reg[1][26]/D |
+| clk                | clk               | key_expansion_unit/w_reg[3][29]/D |
+| clk                | clk               | key_expansion_unit/w_reg[1][18]/D |
+| clk                | clk               | key_expansion_unit/w_reg[3][26]/D |
+| clk                | clk               | key_expansion_unit/w_reg[0][15]/D |
+| clk                | clk               | key_expansion_unit/w_reg[2][15]/D |
+| clk                | clk               | key_expansion_unit/w_reg[1][24]/D |
+| clk                | clk               | key_expansion_unit/w_reg[3][14]/D |
+| clk                | clk               | key_expansion_unit/w_reg[3][30]/D |
+| clk                | clk               | key_expansion_unit/w_reg[0][26]/D |
+| clk                | clk               | key_expansion_unit/w_reg[0][22]/D |
+| clk                | clk               | key_expansion_unit/w_reg[2][30]/D |
+| clk                | clk               | key_expansion_unit/w_reg[2][26]/D |
+| clk                | clk               | key_expansion_unit/w_reg[0][29]/D |
+| clk                | clk               | key_expansion_unit/w_reg[1][14]/D |
+| clk                | clk               | key_expansion_unit/w_reg[3][23]/D |
+| clk                | clk               | key_expansion_unit/w_reg[1][17]/D |
+| clk                | clk               | key_expansion_unit/w_reg[1][30]/D |
+| clk                | clk               | key_expansion_unit/w_reg[3][18]/D |
+| clk                | clk               | key_expansion_unit/w_reg[0][17]/D |
+| clk                | clk               | key_expansion_unit/w_reg[0][18]/D |
+| clk                | clk               | key_expansion_unit/w_reg[0][20]/D |
+| clk                | clk               | key_expansion_unit/w_reg[1][21]/D |
+| clk                | clk               | key_expansion_unit/w_reg[1][31]/D |
+| clk                | clk               | key_expansion_unit/w_reg[0][31]/D |
+| clk                | clk               | key_expansion_unit/w_reg[3][31]/D |
+| clk                | clk               | key_expansion_unit/w_reg[1][23]/D |
+| clk                | clk               | key_expansion_unit/w_reg[2][21]/D |
+| clk                | clk               | key_expansion_unit/w_reg[2][23]/D |
+| clk                | clk               | key_expansion_unit/w_reg[0][23]/D |
+| clk                | clk               | key_expansion_unit/w_reg[3][21]/D |
+| clk                | clk               | key_expansion_unit/w_reg[0][21]/D |
+| clk                | clk               | key_expansion_unit/w_reg[1][7]/D  |
+| clk                | clk               | key_expansion_unit/w_reg[3][7]/D  |
+| clk                | clk               | key_expansion_unit/w_reg[0][2]/D  |
+| clk                | clk               | key_expansion_unit/w_reg[0][6]/D  |
+| clk                | clk               | key_expansion_unit/w_reg[0][3]/D  |
+| clk                | clk               | key_expansion_unit/w_reg[3][6]/D  |
++--------------------+-------------------+-----------------------------------+

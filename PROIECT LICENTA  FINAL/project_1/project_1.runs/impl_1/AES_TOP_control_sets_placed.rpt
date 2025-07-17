@@ -1,0 +1,137 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Sun Jul  6 13:25:11 2025
+| Host         : DESKTOP-VR7V5RM running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file AES_TOP_control_sets_placed.rpt
+| Design       : AES_TOP
+| Device       : xc7s50
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    59 |
+|    Minimum number of control sets                        |    59 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    32 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    59 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     2 |
+| >= 16              |    51 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              21 |            8 |
+| No           | No                    | Yes                    |            7565 |         2981 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |            1422 |          720 |
+| Yes          | No                    | Yes                    |            1732 |          901 |
+| Yes          | Yes                   | No                     |              28 |           10 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-------------------------------------------------+----------------------------------------+------------------+----------------+--------------+
+|  Clock Signal  |                  Enable Signal                  |            Set/Reset Signal            | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+-------------------------------------------------+----------------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG | uart_tx_inst/r_SM_Main__0[2]                    |                                        |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | uart_tx_inst/E[0]                               | rst_IBUF                               |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/FSM_onehot_r_SM_Main[4]_i_1_n_0    |                                        |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | uart_rx_inst/r_Rx_DV_reg_0[0]                   | rst_IBUF                               |                1 |              6 |         6.00 |
+|  clk_IBUF_BUFG | uart_tx_inst/r_Tx_Data                          |                                        |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | uart_tx_inst/sending_reg[0]                     | rst_IBUF                               |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | uart_tx_inst/r_Clock_Count[0]_i_2_n_0           | uart_tx_inst/r_Clock_Count0            |                4 |             14 |         3.50 |
+|  clk_IBUF_BUFG | uart_rx_inst/r_Clock_Count                      | uart_rx_inst/r_Clock_Count[13]_i_1_n_0 |                6 |             14 |         2.33 |
+|  clk_IBUF_BUFG |                                                 |                                        |                8 |             21 |         2.62 |
+|  clk_IBUF_BUFG | key_expansion_unit/i[5]_i_1_n_0                 | rst_IBUF                               |                8 |             22 |         2.75 |
+|  clk_IBUF_BUFG | key_expansion_unit/E[0]                         | rst_IBUF                               |               25 |             28 |         1.12 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[17][31]_i_1_n_0            |                                        |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[14][31]_i_1_n_0            |                                        |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[15][31]_i_1_n_0            |                                        |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[19][31]_i_1_n_0            |                                        |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[16][31]_i_1_n_0            |                                        |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[28][31]_i_1_n_0            |                                        |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[29][31]_i_1_n_0            |                                        |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[21][31]_i_1_n_0            |                                        |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[25][31]_i_1_n_0            |                                        |               19 |             32 |         1.68 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[24][31]_i_1_n_0            |                                        |               21 |             32 |         1.52 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[1][31]_i_1_n_0             |                                        |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[20][31]_i_1_n_0            |                                        |               19 |             32 |         1.68 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[26][31]_i_1_n_0            |                                        |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[27][31]_i_1_n_0            |                                        |               21 |             32 |         1.52 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[23][31]_i_1_n_0            |                                        |               23 |             32 |         1.39 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[22][31]_i_1_n_0            |                                        |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[36][31]_i_1_n_0            |                                        |               22 |             32 |         1.45 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[3][31]_i_1_n_0             |                                        |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[12][31]_i_1_n_0            |                                        |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[41][31]_i_1_n_0            |                                        |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[43][31]_i_1_n_0            |                                        |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[2][31]_i_1_n_0             |                                        |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[30][31]_i_1_n_0            |                                        |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[39][31]_i_1_n_0            |                                        |               22 |             32 |         1.45 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[35][31]_i_1_n_0            |                                        |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[37][31]_i_1_n_0            |                                        |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[31][31]_i_1_n_0            |                                        |               19 |             32 |         1.68 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[33][31]_i_1_n_0            |                                        |               20 |             32 |         1.60 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[38][31]_i_1_n_0            |                                        |               21 |             32 |         1.52 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[40][31]_i_1_n_0            |                                        |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[42][31]_i_1_n_0            |                                        |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[34][31]_i_1_n_0            |                                        |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[4][31]_i_1_n_0             |                                        |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[7][31]_i_1_n_0             |                                        |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[8][31]_i_1_n_0             |                                        |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[9][31]_i_1_n_0             |                                        |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[6][31]_i_1_n_0             |                                        |               21 |             32 |         1.52 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[13][31]_i_1_n_0            |                                        |                7 |             32 |         4.57 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[32][31]_i_1_n_0            |                                        |               24 |             32 |         1.33 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[18][31]_i_1_n_0            |                                        |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[10][31]_i_1_n_0            |                                        |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[11][31]_i_1_n_0            |                                        |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[0][31]_i_1_n_0             |                                        |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG | key_expansion_unit/w[5][31]_i_1_n_0             |                                        |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG | uart_rx_inst/sending_reg                        | rst_IBUF                               |               66 |            128 |         1.94 |
+|  clk_IBUF_BUFG | uart_rx_inst/E[0]                               | rst_IBUF                               |               57 |            128 |         2.25 |
+|  clk_IBUF_BUFG | key_expansion_unit/round_keys_out[1407]_i_1_n_0 | rst_IBUF                               |              740 |           1408 |         1.90 |
+|  clk_IBUF_BUFG |                                                 | rst_IBUF                               |             2981 |           7565 |         2.54 |
++----------------+-------------------------------------------------+----------------------------------------+------------------+----------------+--------------+
+
+
